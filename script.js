@@ -38,7 +38,7 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     phoneValue = phoneValue.replace(/\D/g, ''); // \D matches anything that's not a digit
 
     // Check if the phone number is valid (10 digits)
-    const phoneRegex = /^[0-9]{10}$/;
+    const phoneRegex = /^[0-10]{10}$/;
     if (phoneValue === "" || !phoneRegex.test(phoneValue)) {
         document.getElementById('phoneError').style.display = 'block';
         phone.style.borderColor = '#e74c3c';
