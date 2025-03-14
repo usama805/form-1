@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Contact Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="contactForm">
+            <h2>Contact Us</h2>
+            
+            <!-- Name Field -->
+            <div class="input-group">
+                <input type="text" id="name" name="name" placeholder=" Enter your name please" >
+                <label for="name">Name</label>
+                <span class="error-message" id="nameError">Please enter your name</span>
+            </div>
+
+            <!-- Email Field -->
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Enter your emial please  " >
+                <label for="email">Email</label>
+                <span class="error-message" id="emailError">Please enter a valid email</span>
+            </div>
+
+            <!-- Phone Number Field -->
+            <div class="input-group">
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone " >
+                <label for="phone">Phone Number</label>
+                <span class="error-message" id="phoneError">Please enter a valid phone number</span>
+            </div>
+
+            <!-- Message Field -->
+            <div class="input-group">
+                <textarea id="message" name="message" placeholder=" Enter yor message" ></textarea>
+                <label for="message">Message</label>
+                <span class="error-message" id="messageError">Please enter your message</span>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+            <div id="successMessage" class="success-message">Form submitted successfully!</div>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
